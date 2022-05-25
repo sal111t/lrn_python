@@ -4,9 +4,9 @@
   
 ```mermaid
   flowchart TB
-    node0(["Python"]) --> node1["Basics (1)"]
-      style node0 fill:#FFF0F5, stroke:#000, stroke-width:4px, color:#000
+    node0["Python"]:::Title --> node1["Basics (1)"]
       click node0 "http://#"
+ 
   
       node1["Basics (1)"] --- node9("Basic Syntax (1.1)")
         
@@ -131,7 +131,8 @@
         click node49 "http://#"
       node49("nose (8.3)"):::SubClass1 -.-> node50("doctest (8.4)"):::SubClass1
         click node50 "http://#"
-      
+    
+    classDef Title fill:#FFF0F5, stroke:#000, stroke-width:4px, color:#000
     classDef ClassZero fill:#FFFFE0, stroke:#000, stroke-width:3px, color:#000
     classDef SubClass1 fill:#00FF7F, stroke:#000, stroke-width:2px, color:#000 
     classDef SubClass2 fill:#87CEFA, stroke:#000, stroke-width:1px, color:#000
